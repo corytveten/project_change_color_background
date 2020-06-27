@@ -1,12 +1,9 @@
 //Choose a random color
-const button = document.querySelector('button')
-const body = document.querySelector('body')
-const colors = ['red', 'green', 'blue', 'yellow', 'pink', 'purple']
 
-body.style.backgroundColor = 'violet'
-button.addEventListener('click', changeBackground)
+const button = document.getElementsByClassName('btn btn-outline-secondary')
 
-function changeBackground(){
-const colorIndex= parseInt(Math.random()*colors.length)
-body.style.backgroundColor = colors[colorIndex]
+function changeColor() {
+    document.body.style.backgroundColor = 'dodgerBlue';
 }
+
+button[0].addEventListener('click', changeColor)
